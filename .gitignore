@@ -2,3 +2,5 @@ node_modules
 composer.lock
 vendor
 .DS_Store
+build
+package-lock.json
