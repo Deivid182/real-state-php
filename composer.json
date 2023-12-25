@@ -1,0 +1,19 @@
+{
+    "name": "dave/real-estate",
+    "description": "real-estate-with-poo",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Deivid182",
+            "email": "davidmendoza911119@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7"
+    }
+}

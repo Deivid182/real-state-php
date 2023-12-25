@@ -1,0 +1,53 @@
+.container-advertisements {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@include tablet {
+  .container-advertisements {
+    @include grid(3, 2rem);
+  }
+}
+
+.advertisement {
+  background-color: $gray;
+  border: 1px solid lighten($gray, 5);
+  .info-advertisement{
+    padding: 2rem;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: start !important;
+  }
+  h3, p {
+    margin: 0;
+  }
+  .price {
+    color: $green;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .feature-icons {
+    display: flex;
+    list-style: none;
+    max-width: 40rem;
+    padding: 0;
+    li {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img {
+        flex: 0 0 4rem;
+        width: 4rem;
+        height: 4rem;
+        object-fit: contain;
+      }
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.btn-contact {
+  @include custom_button($yellow, inline-block);
+}
+
+.btn-yellow {
+  @include custom_button($yellow, block);
+}
+
+.btn-green {
+  @include custom_button($green, inline-block);
+}
+
+.btn-red {
+  @include custom_button($redStrong, inline-block);
+}
+
+.btn-green-block {
+  @include custom_button($green, block);
+  width: 100%;
+}
+
+.btn-red-block {
+  @include custom_button($redStrong, block);
+  width: 100%;
+}

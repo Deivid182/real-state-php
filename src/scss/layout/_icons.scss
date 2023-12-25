@@ -1,0 +1,27 @@
+@include mobile {
+  .about-icons {
+    @include grid(1, 2rem);
+  }
+}
+
+@include tablet {
+  .about-icons {
+    @include grid(3, 2rem);
+  }
+}
+
+.icon {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+  }
+  h3 {
+    text-transform: uppercase;
+  }
+}

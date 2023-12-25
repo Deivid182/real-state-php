@@ -1,0 +1,64 @@
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  @include tablet {
+    align-items: end;
+  }
+  .dark-mode-btn {
+    width: 3rem;
+    height: 3rem;
+    filter: invert(1);
+    cursor: pointer;
+  }
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.mobile-menu {
+  @include tablet {
+    display: none;
+  }
+}
+
+.navigation {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility 0.5s ease-in-out, opacity 0.5s linear;
+  @include tablet {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    align-items: center;
+    gap: 2rem;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: block;
+    text-align: center;
+    transition: color 0.5s ease-in-out;
+    &:hover {
+      color: $green;
+    }
+  }
+
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}

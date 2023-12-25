@@ -1,0 +1,20 @@
+.dark {
+  background-color: darken($color: $darkGray, $amount: 10%);
+
+  p, label, tbody {
+    color: $white !important;
+  }
+
+  h1, h2, h3, h4, blockquote, legend {
+    color: $gray !important;
+  }
+
+  .feature-icons li img {
+    filter: invert(0.7);
+  }
+
+  .advertisement {
+    background-color: $darkGray;
+    border: 1px solid $gray;
+  }
+}

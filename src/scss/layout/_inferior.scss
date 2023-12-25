@@ -1,0 +1,50 @@
+@include tablet {
+  .inferior-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include desktop {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+.info-blog {
+  a {
+    color: #000;
+    display: block;
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+  h4 {
+    margin: 0;
+
+    line-height: 1.4;
+    &::after {
+      content: "";
+      display: block;
+      width: 20rem;
+      height: .5rem;
+      background-color: $green;
+      margin-top: 1rem;
+    }
+  }
+
+  span {
+    color: $yellow;
+  }
+}
